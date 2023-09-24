@@ -17,7 +17,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  background-image: url("https://source.unsplash.com/random/2400x1200/?wallpaper");
+  background-image: url("https://source.unsplash.com/random/2400x1200/?bright-wallpaper");
   background-size: cover;
 }
 #container {
@@ -42,17 +42,17 @@ body {
   z-index: 10;
   cursor: pointer;
   background: black;
-  padding: 0.3em 1em;
+  padding: 0.3em 1.2em;
   border-radius: 3px;
   mix-blend-mode: multiply;
 }
 #container a h1 {
-  color: black;
+  color: white;
   background: transparent;
   font-family: 'Orbitron', sans-serif;
   font-size: 28px;
   margin: 0px;
   z-index: 100;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.075em;
 }
