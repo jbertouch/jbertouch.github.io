@@ -41,24 +41,18 @@ body {
   position: relative;
   z-index: 10;
   cursor: pointer;
-  background: white;
+  background: black;
   padding: 0.3em 1em;
   border-radius: 3px;
-}
-#container a:hover {
-  background: black;
+  mix-blend-mode: multiply;
 }
 #container a h1 {
   color: black;
   background: transparent;
   font-family: 'Orbitron', sans-serif;
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 28px;
   margin: 0px;
   z-index: 100;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.1em;
-}
-#container a:hover h1 {
-  color: white;
 }
