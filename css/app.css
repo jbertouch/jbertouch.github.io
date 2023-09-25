@@ -46,6 +46,10 @@ body {
   border-radius: 3px;
   mix-blend-mode: multiply;
   transform: skew(-15deg, 0);
+  transition: border 0.1s ease-out;
+}
+#container a:hover {
+  border: 0.2em solid black;
 }
 #container a h1 {
   color: white;
