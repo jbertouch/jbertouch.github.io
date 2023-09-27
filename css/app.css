@@ -41,18 +41,18 @@ body {
   position: relative;
   z-index: 10;
   cursor: pointer;
-  background: black;
+  background: white;
   padding: 0.3em 1.2em;
   border-radius: 3px;
-  mix-blend-mode: multiply;
+  mix-blend-mode: difference;
   transform: skew(-15deg, 0);
   transition: border 0.1s ease-out;
 }
 #container a:hover {
-  border: 0.2em solid black;
+  border: 0.2em solid white;
 }
 #container a h1 {
-  color: white;
+  color: black;
   background: transparent;
   font-family: 'Orbitron', sans-serif;
   font-size: 28px;
