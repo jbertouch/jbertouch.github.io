@@ -46,6 +46,7 @@ body {
   border-radius: 3px;
   mix-blend-mode: difference;
   transform: skew(-15deg, 0);
+  backdrop-filter: blur(15px);
   transition: border 0.1s ease-out;
 }
 #container a:hover {
