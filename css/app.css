@@ -1,6 +1,8 @@
-html, body {
+html,
+body {
   height: 100%;
 }
+
 body {
   background: #000;
   width: 100%;
@@ -10,6 +12,7 @@ body {
   -o-user-select: none;
   user-select: none;
 }
+
 #background {
   position: absolute;
   top: 0;
@@ -17,9 +20,10 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  background-image: url("https://source.unsplash.com/random/2400x1200/?bright-gradient-wallpaper");
+  background-image: url("/images/prism.avif");
   background-size: cover;
 }
+
 #container {
   height: 100%;
   width: 100%;
@@ -36,6 +40,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 #container a {
   text-decoration: none;
   position: relative;
@@ -48,9 +53,11 @@ body {
   transform: skew(-15deg, 0);
   transition: border 0.1s ease-out;
 }
+
 #container a:hover {
   border: 0.2em solid black;
 }
+
 #container a h1 {
   color: white;
   background: transparent;
