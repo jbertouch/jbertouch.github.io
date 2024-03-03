@@ -46,16 +46,16 @@ body {
   position: relative;
   z-index: 10;
   cursor: pointer;
-  background: black;
-  padding: 0.3em 1.2em;
+  background: red;
+  padding: 0.5em 1.5em;
   border-radius: 3px;
-  mix-blend-mode: multiply;
+  mix-blend-mode: color;
   transform: skew(-15deg, 0);
   transition: border 0.1s ease-out;
 }
 
 #container a:hover {
-  border: 0.2em solid black;
+  border: 0.2em solid red;
 }
 
 #container a h1 {
