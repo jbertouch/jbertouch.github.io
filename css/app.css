@@ -66,5 +66,5 @@ body {
   margin: 0px;
   z-index: 100;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.005em;
 }
