@@ -20,7 +20,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  background-image: url("/images/nyc.jpg");
+  background-image: url("/images/gradient.jpg");
   background-size: cover;
 }
 
@@ -46,16 +46,15 @@ body {
   position: relative;
   z-index: 10;
   cursor: pointer;
-  background: red;
   padding: 0.5em 1.5em;
   border-radius: 3px;
-  mix-blend-mode: color;
   transform: skew(-15deg, 0);
+  border: 1px solid white;
   transition: border 0.1s ease-out;
 }
 
 #container a:hover {
-  border: 0.2em solid red;
+  border: 2px solid white;
 }
 
 #container a h1 {
