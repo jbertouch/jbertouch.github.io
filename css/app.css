@@ -49,7 +49,7 @@ body {
   padding: 0.5em 1.5em;
   border-radius: 3px;
   transform: skew(-15deg, 0);
-  border: 1px solid white;
+  border: 2px solid transparent;
   transition: border 0.1s ease-out;
 }
 
