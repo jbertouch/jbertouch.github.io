@@ -62,22 +62,6 @@ body {
     }
 }
 
-#datetime {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 10;
-    color: white;
-    font-size: 14px;
-    font-weight: 800;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: right;
-    line-height: 1.4;
-    white-space: pre-line;
-    opacity: 0.5;
-}
-
 #container {
     height: 100%;
     width: 100%;

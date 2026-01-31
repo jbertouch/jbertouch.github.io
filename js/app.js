@@ -1,33 +1,3 @@
-function updateDateTime() {
-  var el = document.getElementById('datetime');
-  if (!el) return;
-  var now = new Date();
-  var timeStr = now.toLocaleTimeString('en-US', {
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
-    timeZone: 'UTC'
-  }) + ' UTC';
-  var dateStr = now.toLocaleDateString('en-US', {
-    weekday: 'short',
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-    timeZone: 'UTC'
-  });
-  el.textContent = timeStr + '\n' + dateStr;
-}
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', function() {
-    updateDateTime();
-    setInterval(updateDateTime, 1000);
-  });
-} else {
-  updateDateTime();
-  setInterval(updateDateTime, 1000);
-}
-
 function getWidth() {
   if (self.innerHeight) {
     return self.innerWidth;
