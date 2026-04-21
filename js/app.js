@@ -20,40 +20,6 @@ function mobilecheck() {
   return check;
 }
 
-function buildRandomGridFills() {
-  var overlay = document.getElementById('grid-overlay');
-  if (!overlay) return;
-
-  var existing = overlay.querySelectorAll('.grid-fill');
-  for (var i = 0; i < existing.length; i++) {
-    existing[i].remove();
-  }
-
-  var w = getWidth();
-  var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-  var cols = Math.floor(w / 20);
-  var rows = Math.floor(h / 20);
-  var total = cols * rows;
-  var numFilled = Math.min(Math.max(Math.floor(total * 0.06), 40), 180);
-
-  var used = {};
-  var count = 0;
-  while (count < numFilled) {
-    var col = Math.floor(Math.random() * cols);
-    var row = Math.floor(Math.random() * rows);
-    var key = col + ',' + row;
-    if (!used[key]) {
-      used[key] = true;
-      var cell = document.createElement('div');
-      cell.className = 'grid-fill';
-      cell.style.left = (col * 20) + 'px';
-      cell.style.top = (row * 20) + 'px';
-      overlay.appendChild(cell);
-      count++;
-    }
-  }
-}
-
 if (window.devicePixelRatio && devicePixelRatio >= 2) {
   var testElement = document.createElement('div');
   testElement.style.border = '.5px solid transparent';
@@ -63,10 +29,3 @@ if (window.devicePixelRatio && devicePixelRatio >= 2) {
   }
   document.body.removeChild(testElement);
 }
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', buildRandomGridFills);
-} else {
-  buildRandomGridFills();
-}
-window.addEventListener('resize', buildRandomGridFills);

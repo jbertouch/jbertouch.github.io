@@ -41,14 +41,6 @@ body {
     background-size: 20px 20px;
 }
 
-#grid-overlay .grid-fill {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: rgba(9, 0, 41, 0.15);
-    box-sizing: border-box;
-}
-
 #container {
     height: 100%;
     width: 100%;
