@@ -48,8 +48,6 @@ function buildRandomGridFills() {
       cell.className = 'grid-fill';
       cell.style.left = (col * 20) + 'px';
       cell.style.top = (row * 20) + 'px';
-      cell.style.animationDelay = (Math.random() * 2) + 's';
-      cell.style.animationDuration = (1.2 + Math.random() * 1.8) + 's';
       overlay.appendChild(cell);
       count++;
     }
